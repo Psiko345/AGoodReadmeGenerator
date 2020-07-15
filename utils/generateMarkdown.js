@@ -15,7 +15,7 @@ function generateMarkdown(data) {
       ? "Provide instructions and examples for use. Include screenshots as needed."
       : data.usage;
 
-  let licences = {
+  let licenses = {
     MIT: "https://choosealicense.com/licenses/mit/",
     "GNU GPLv3": "https://choosealicense.com/licenses/gpl-3.0/",
     "Apache 2.0": "https://choosealicense.com/licenses/apache-2.0/",
@@ -23,6 +23,9 @@ function generateMarkdown(data) {
     "Mozilla Public License 2.0":
       "https://choosealicense.com/licenses/mpl-2.0/",
   };
+
+  let licenseURL = licenses[data.license];
+  let licenseMd = `[${data.license}](${licenseURL})`;
 
   return `
   ${titleImageMd}
@@ -54,7 +57,7 @@ function generateMarkdown(data) {
   ${data.questions}
 
   ## License
-  ${data.license}
+  ${licenseMd}
 `;
 }
 
