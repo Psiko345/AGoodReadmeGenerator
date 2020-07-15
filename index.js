@@ -6,6 +6,11 @@ const generateMarkdown = require("./utils/generateMarkdown.js");
 const questions = [
   {
     type: "input",
+    message: "A title image is a good idea, paste a hyperlink of an image here",
+    name: "titleImage",
+  },
+  {
+    type: "input",
     message: "What is the title of your repository?",
     name: "title",
   },
@@ -31,18 +36,6 @@ const questions = [
     name: "usage",
   },
   {
-    type: "list",
-    message: "What license do you wish to use?",
-    name: "license",
-    choices: [
-      "MIT",
-      "GNU GPLv3",
-      "Apache 2.0",
-      "GNU LGPLv3",
-      "Mozilla Public License 2.0",
-    ],
-  },
-  {
     type: "input",
     message: "If you would like to contribute to my project...",
     name: "contributing",
@@ -58,6 +51,18 @@ const questions = [
     message:
       "If people have questions, where should they contact you? (github username and email)",
     name: "questions",
+  },
+  {
+    type: "list",
+    message: "What license do you wish to use?",
+    name: "license",
+    choices: [
+      "MIT",
+      "GNU GPLv3",
+      "Apache 2.0",
+      "GNU LGPLv3",
+      "Mozilla Public License 2.0",
+    ],
   },
 ];
 
