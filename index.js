@@ -11,19 +11,18 @@ const questions = [
   },
   {
     type: "input",
-    message: "Write a brief description of your repository",
+    message: "A title image is a good idea, paste a hyperlink of an image here",
+    name: "titleImage",
+  },
+  {
+    type: "input",
+    message:
+      "Write a brief description of your repository, one or two sentences max",
     name: "description",
   },
   {
     type: "input",
-    message:
-      "For the table of conents, what are the sections of your repository?",
-    name: "tableOfContents",
-  },
-  {
-    type: "input",
-    message:
-      "Provide a quick overview of your installation instructions, including a requirements subsection if necessary",
+    message: "Provide a quick overview of your installation instructions",
     name: "install",
   },
   {
@@ -35,11 +34,17 @@ const questions = [
     type: "list",
     message: "What license do you wish to use?",
     name: "license",
-    choices: ["MIT", "GNU GPLv3", "Apache 2.0"],
+    choices: [
+      "MIT",
+      "GNU GPLv3",
+      "Apache 2.0",
+      "GNU LGPLv3",
+      "Mozilla Public License 2.0",
+    ],
   },
   {
     type: "input",
-    message: "Provide directions for people who wish to contribute",
+    message: "If you would like to contribute to my project...",
     name: "contributing",
   },
   {
