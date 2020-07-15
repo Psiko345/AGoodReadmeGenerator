@@ -44,11 +44,6 @@ const questions = [
   },
   {
     type: "input",
-    message: "Provide directions for people who wish to contribute",
-    name: "contributing",
-  },
-  {
-    type: "input",
     message:
       "If you want, include more in-depth technical detail on your code and/or technologies here",
     name: "tests",
