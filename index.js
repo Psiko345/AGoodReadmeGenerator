@@ -37,6 +37,28 @@ const questions = [
     name: "license",
     choices: ["MIT", "GNU GPLv3", "Apache 2.0"],
   },
+  {
+    type: "input",
+    message: "Provide directions for people who wish to contribute",
+    name: "contributing",
+  },
+  {
+    type: "input",
+    message: "Provide directions for people who wish to contribute",
+    name: "contributing",
+  },
+  {
+    type: "input",
+    message:
+      "If you want, include more in-depth technical detail on your code and/or technologies here",
+    name: "tests",
+  },
+  {
+    type: "input",
+    message:
+      "If people have questions, where should they contact you? (github username and email)",
+    name: "questions",
+  },
 ];
 
 // function to write README file
