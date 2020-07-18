@@ -17,7 +17,7 @@ function generateMarkdown(data) {
 
   let usageMd =
     data.usage === ""
-      ? "Provide instructions and examples for use. Include screenshots as needed."
+      ? "Just run the index.js in cmd using node.js and you should be good!"
       : data.usage;
 
   let licenses = {
@@ -81,7 +81,7 @@ function generateMarkdown(data) {
   ${usageMd}
 
   ## Contributing
-  If you have created an application or package and don't mind other developers contributing to it, you will want to add guidelines for how to do so. The [Contributor Covenant](https://www.contributor-covenant.org/) is an industry standard, but you can always write your own.
+  I don't mind other developers contributing to this, if you do, please follow the [Contributor Covenant](https://www.contributor-covenant.org/).
 
   ## Tests
   Go the extra mile and write tests for your application. Then provide examples on how to run them.
