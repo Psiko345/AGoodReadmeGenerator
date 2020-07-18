@@ -5,6 +5,11 @@ function generateMarkdown(data) {
       ? ""
       : `![alt text](${data.titleImage} "${data.title} logo icon")`;
 
+  let packagesMd =
+    data.packages === ""
+      ? "You shouldn't need anything! Although I recommend running: npm i , as a default."
+      : data.packages;
+
   let installMd =
     data.install === ""
       ? "What are the steps required to install your project? Provide a step-by-step description of how to get the development environment running."
@@ -41,7 +46,8 @@ function generateMarkdown(data) {
   5. [Questions](#questions)
   6. [License](#license)
 
-  ## Installation 
+  ## Installation
+  You will need the following Node.js packages: ${packagesMd} 
   ${installMd}
 
   ## Usage

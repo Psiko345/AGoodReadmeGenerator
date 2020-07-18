@@ -6,55 +6,53 @@ const generateMarkdown = require("./utils/generateMarkdown.js");
 const questions = [
   {
     type: "input",
-    message: "A title image is a good idea, paste a hyperlink of an image here",
-    name: "titleImage",
+    message: "Please enter your Github Username:",
+    name: "username",
   },
   {
     type: "input",
-    message: "What is the title of your repository?",
+    message: "E-mail address:",
+    name: "email",
+  },
+  {
+    type: "input",
+    message: "What is the title of your repository:",
     name: "title",
   },
   {
     type: "input",
-    message: "A title image is a good idea, paste a hyperlink of an image here",
+    message: "A title image is a good idea, paste a hyperlink of an image here:",
     name: "titleImage",
   },
   {
     type: "input",
     message:
-      "Write a brief description of your repository, one or two sentences max",
+      "Write a brief description of your repository, one or two sentences max:",
     name: "description",
   },
   {
     type: "input",
-    message: "Provide a quick overview of your installation instructions",
+    message: "URL of Repository, if you have one already, else leave blank and add in later:",
+    name: "URL",
+  },
+  {
+    type: "input",
+    message: "What Node packages are needed to run your code:",
+    name: "packages",
+  }
+  {
+    type: "input",
+    message: "Provide a quick overview of your installation instructions:",
     name: "install",
   },
   {
     type: "input",
-    message: "Please provide an example of usage",
+    message: "Please provide an example of usage:",
     name: "usage",
   },
   {
-    type: "input",
-    message: "If you would like to contribute to my project...",
-    name: "contributing",
-  },
-  {
-    type: "input",
-    message:
-      "If you want, include more in-depth technical detail on your code and/or technologies here",
-    name: "tests",
-  },
-  {
-    type: "input",
-    message:
-      "If people have questions, where should they contact you? (github username and email)",
-    name: "questions",
-  },
-  {
     type: "list",
-    message: "What license do you wish to use?",
+    message: "What license do you wish to use:",
     name: "license",
     choices: [
       "MIT",
