@@ -21,7 +21,8 @@ const questions = [
   },
   {
     type: "input",
-    message: "A title image is a good idea, paste a hyperlink of an image here:",
+    message:
+      "A title image is a good idea, paste a hyperlink of an image here:",
     name: "titleImage",
   },
   {
@@ -32,14 +33,15 @@ const questions = [
   },
   {
     type: "input",
-    message: "URL of Repository, if you have one already, else leave blank and add in later:",
+    message:
+      "URL of Repository, if you have one already, else leave blank and add in later:",
     name: "URL",
   },
   {
     type: "input",
     message: "What Node packages are needed to run your code:",
     name: "packages",
-  }
+  },
   {
     type: "input",
     message: "Provide a quick overview of your installation instructions:",
@@ -65,7 +67,11 @@ const questions = [
 ];
 
 // function to write README file
-function writeToFile(fileName, data) {}
+function writeToFile(fileName, data) {
+  fs.writeFile(fileName, data, function (err) {
+    if (err) throw err;
+  });
+}
 
 // function to initialize program
 function init() {
