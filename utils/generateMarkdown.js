@@ -7,7 +7,7 @@ function generateMarkdown(data) {
 
   let packagesMd =
     data.packages === ""
-      ? "You shouldn't need anything! Although I recommend running: npm i , as a default."
+      ? "When running the file, just leave the default option for install."
       : data.packages;
 
   let installMd =
