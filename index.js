@@ -39,13 +39,9 @@ const questions = [
   },
   {
     type: "input",
-    message: "What Node packages are needed to run your code:",
-    name: "packages",
-  },
-  {
-    type: "input",
     message: "Provide a quick overview of your installation instructions:",
     name: "install",
+    default: "npm i",
   },
   {
     type: "input",
@@ -79,7 +75,7 @@ function init() {
     console.log(response);
     let mkdn = generateMarkdown(response);
     console.log(mkdn);
-    writeToFile("README.md", mkdn);
+    writeToFile("README2.md", mkdn);
   });
 }
 

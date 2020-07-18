@@ -47,7 +47,8 @@ function generateMarkdown(data) {
   6. [License](#license)
 
   ## Installation
-  You will need the following Node.js packages: ${packagesMd} 
+  To install required node packages, run: 
+
   ${installMd}
 
   ## Usage
