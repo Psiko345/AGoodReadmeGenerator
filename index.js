@@ -75,7 +75,7 @@ function init() {
     console.log(response);
     let mkdn = generateMarkdown(response);
     console.log(mkdn);
-    writeToFile("README2.md", mkdn);
+    writeToFile("generatedREADME.md", mkdn);
   });
 }
 
