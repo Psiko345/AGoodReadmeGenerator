@@ -22,9 +22,13 @@ function generateMarkdown(data) {
 
   let licenses = {
     MIT: "https://choosealicense.com/licenses/mit/",
+
     "GNU GPLv3": "https://choosealicense.com/licenses/gpl-3.0/",
+
     "Apache 2.0": "https://choosealicense.com/licenses/apache-2.0/",
+
     "GNU LGPLv3": "https://choosealicense.com/licenses/lgpl-3.0/",
+
     "Mozilla Public License 2.0":
       "https://choosealicense.com/licenses/mpl-2.0/",
   };
@@ -32,11 +36,33 @@ function generateMarkdown(data) {
   let licenseURL = licenses[data.license];
   let licenseMd = `[${data.license}](${licenseURL})`;
 
+  let badges = {
+    MIT:
+      "[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)",
+
+    "GNU GPLv3":
+      "[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)",
+
+    "Apache 2.0":
+      "[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)",
+
+    "GNU LGPLv3":
+      "[![License: LGPL v3](https://img.shields.io/badge/License-LGPL%20v3-blue.svg)](https://www.gnu.org/licenses/lgpl-3.0)",
+
+    "Mozilla Public License 2.0":
+      "[![License: MPL 2.0](https://img.shields.io/badge/License-MPL%202.0-brightgreen.svg)](https://opensource.org/licenses/MPL-2.0)",
+  };
+
+  let badgeMd = badges[data.license];
+
   return `
   ${titleImageMd}
   
+  
   # ${data.title}
    *${data.description}*
+
+  ${badgeMd}
 
   ## Table of Contents
   1. [Installation](#installation)
@@ -65,7 +91,7 @@ function generateMarkdown(data) {
   
 
   ## License
-  ${licenseMd}
+  ${licenseMd[0]}
 `;
 }
 
