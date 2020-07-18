@@ -1,8 +1,12 @@
 
+
+
   
   
-  # c
-   *d*
+    # ReadmeGenerator
+   *Takes several inputs on node.js and then generates a README for your repository.*
+
+  [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
   ## Table of Contents
   1. [Installation](#installation)
@@ -13,8 +17,9 @@
   6. [License](#license)
 
   ## Installation
-  You will need the following Node.js packages: You shouldn't need anything! Although I recommend running: npm i , as a default. 
-  What are the steps required to install your project? Provide a step-by-step description of how to get the development environment running.
+  To install required node packages, run:
+
+  npm i
 
   ## Usage
   Provide instructions and examples for use. Include screenshots as needed.
@@ -26,8 +31,8 @@
   Go the extra mile and write tests for your application. Then provide examples on how to run them.
 
   ## Questions
-  If you have and questions regarding the code, feel free to contact me @ a on github, or email me @ b
-  
+  If you have and questions regarding the code, feel free to contact me @ Psiko345 on github, or email me @ joshua.g.piper@gmail.com
+
 
   ## License
   [MIT](https://choosealicense.com/licenses/mit/)
