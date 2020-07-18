@@ -91,7 +91,7 @@ function generateMarkdown(data) {
   
 
   ## License
-  ${licenseMd[0]}
+  ${licenseMd}
 `;
 }
 
