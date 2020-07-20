@@ -41,7 +41,7 @@ const questions = [
     type: "input",
     message: "Provide a quick overview of your installation instructions:",
     name: "install",
-    default: "npm i",
+    default: "npm install",
   },
   {
     type: "input",
