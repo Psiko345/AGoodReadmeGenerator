@@ -2,10 +2,10 @@
   
   
   
-  # ReadmeGenerator
-   *Takes several inputs on node.js and then generates a README for your repository.*
+  # AGoodReadmeGenerator
+   *Taking responses from a user, it generates a basic readme.md file*
 
-  [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+  [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
 
   ## Table of Contents
   1. [Installation](#installation)
@@ -18,13 +18,13 @@
   ## Installation
   To install required node packages, run: 
 
-  npm i
+  npm install
 
   ## Usage
-  Provide instructions and examples for use. Include screenshots as needed.
+  Just run the index.js in cmd using node.js and you should be good!
 
   ## Contributing
-  If you have created an application or package and don't mind other developers contributing to it, you will want to add guidelines for how to do so. The [Contributor Covenant](https://www.contributor-covenant.org/) is an industry standard, but you can always write your own.
+  I don't mind other developers contributing to this, if you do, please follow the [Contributor Covenant](https://www.contributor-covenant.org/).
 
   ## Tests
   Go the extra mile and write tests for your application. Then provide examples on how to run them.
@@ -34,4 +34,4 @@
   
 
   ## License
-  [MIT](https://choosealicense.com/licenses/mit/)
+  [Apache 2.0](https://choosealicense.com/licenses/apache-2.0/)
