@@ -75,7 +75,7 @@ function generateMarkdown(data) {
   ## Installation
   To install required node packages, run: 
 
-  ${installMd}
+      ${installMd}
 
   ## Usage
   ${usageMd}
@@ -84,7 +84,9 @@ function generateMarkdown(data) {
   I don't mind other developers contributing to this, if you do, please follow the [Contributor Covenant](https://www.contributor-covenant.org/).
 
   ## Tests
-  Go the extra mile and write tests for your application. Then provide examples on how to run them.
+  To test this code, just run: 
+
+      npm test
 
   ## Questions
   If you have and questions regarding the code, feel free to contact me @ ${data.username} on github, or email me @ ${data.email}
